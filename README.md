@@ -1,11 +1,6 @@
 # leetcode
 力扣解题记录
 
-## 目标
-
-- 2021年 春 HUAWEI
-- 
-
 ## 里程碑
 
 | DATE      | MILESTONE |
