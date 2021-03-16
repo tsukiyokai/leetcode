@@ -1,5 +1,5 @@
 # leetcode
-力扣解题记录
+Solutions for Leetcode
 
 ## 里程碑
 
