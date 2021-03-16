@@ -27,17 +27,17 @@
 ```c++
 class Solution {
 public:
-	int titleToNumber(string s) {
-		int len = s.size();
-		int prev = 0;
-		int diff = 0;
+    int titleToNumber(string s) {
+        int len = s.size();
+        int prev = 0;
+        int diff = 0;
 
-		if (len <= 1) return 1 + s[0] - 'A';
-		for (int i = 1; i <= len - 1; i++) prev += (int)pow(26, i);
-		for (int i = 1; i <= len; i++) diff += (s[i - 1] - 'A') * (int)pow(26, len - i);
+        if (len <= 1) return 1 + s[0] - 'A';
+        for (int i = 1; i <= len - 1; i++) prev += (int)pow(26, i);
+        for (int i = 1; i <= len; i++) diff += (s[i - 1] - 'A') * (int)pow(26, len - i);
 
-		return prev + diff + 1;
-	}
+        return prev + diff + 1;
+    }
 };
 ```
 
@@ -65,14 +65,14 @@ diff是prev与目标数字的差，即(prev, AAA]
 ```c++
 class solution {
 public:
-	int titletonumber(string s) {
-		int ans = 0;
-		for (auto c : s) {
-			int num = c - 'a' + 1;
-			ans = ans * 26 + num;
-		}
-		return ans;
-	}
+    int titletonumber(string s) {
+        int ans = 0;
+        for (auto c : s) {
+            int num = c - 'a' + 1;
+            ans = ans * 26 + num;
+        }
+        return ans;
+    }
 };
 ```
 
@@ -80,13 +80,13 @@ public:
 
 ```
 /*
-A	1
-Z	26
-AA	27
-AZ	26+26
-BA	26+26+1
-ZZ	26+26*26=702
-AAA	703
+A    1
+Z    26
+AA    27
+AZ    26+26
+BA    26+26+1
+ZZ    26+26*26=702
+AAA    703
 */
 
 每一位上的数：int num = c - 'a' + 1;

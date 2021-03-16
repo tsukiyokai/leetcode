@@ -15,23 +15,23 @@
 ```c++
 class Solution {
 public:
-	int strStr(string haystack, string needle) {
-		if (needle.size() > haystack.size()) return -1;
-		if (needle.size() == 0) return 0;
-		for (int i = 0; i < haystack.size() - needle.size() + 1; i++) {
-			int j = i;
-			bool flag = true;
-			for (auto c : needle) {
-				if (c == haystack[j]) j++;
-				else {
-					flag = false;
-					break;
-				}
-			}
-			if (flag) return i;
-		}
-		return -1;
-	}
+    int strStr(string haystack, string needle) {
+        if (needle.size() > haystack.size()) return -1;
+        if (needle.size() == 0) return 0;
+        for (int i = 0; i < haystack.size() - needle.size() + 1; i++) {
+            int j = i;
+            bool flag = true;
+            for (auto c : needle) {
+                if (c == haystack[j]) j++;
+                else {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) return i;
+        }
+        return -1;
+    }
 };
 ```
 
