@@ -1,9 +1,9 @@
 ## 题目
 
 ```
-实现 strStr() 函数。
-给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从 0 开始)。
-如果不存在，则返回  -1。
+实现strStr()函数。
+给定一个haystack字符串和一个needle字符串，在haystack字符串中找出needle字符串出现的第一个位置(从0开始)。
+如果不存在，则返回-1。
 
 输入: haystack = "hello", needle = "ll"
 输出: 2
@@ -39,6 +39,7 @@ public:
 ### 注释
 
 ```
-第一个 for 循环写的很好，如此设置可以直接确保 needle 的尾巴不会超过 haystack 的末尾而发生上溢。
+第一层 for 循环写的很好，如此设置可以直接确保 needle 的尾巴不会超过 haystack 的末尾而发生上溢。
 ```
 
+## 完
