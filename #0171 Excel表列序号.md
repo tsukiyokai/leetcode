@@ -63,12 +63,12 @@ diff是prev与目标数字的差，即(prev, AAA]
 ### 代码
 
 ```c++
-class solution {
+class Solution {
 public:
-    int titletonumber(string s) {
+    int titleToNumber(string s) {
         int ans = 0;
         for (auto c : s) {
-            int num = c - 'a' + 1;
+            int num = c - 'A' + 1;
             ans = ans * 26 + num;
         }
         return ans;
@@ -92,6 +92,7 @@ AAA    703
 每一位上的数：int num = c - 'a' + 1;
 每一位的权重是26：ans = ans * 26 + num;
 
-从左到右遍历，其实连续乘以26并保存下来就行，不是非得要只乘一次pow(26, len-i)，脑子不要这么直，
+从左到右遍历，其实连续乘以26并保存下来就行，不是非得要只乘一次pow(26, len-i)，脑子不要这么直。
 ```
 
+## 完
